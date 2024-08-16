@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar with Logo and Buttons</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <nav class="navbar">
@@ -16,11 +18,86 @@
         <div class="nav-right">
             <div class="chat-section">
                 <span>Do you want to become an expert? Chat with Jessica!</span>
-                <img src="chat-logo.png" alt="Chat Logo" class="chat-logo">
+                <img src="img/radio.png" alt="Chat Logo" class="chat-logo">
             </div>
             <button class="schedule-btn">Schedule Call</button>
             <img src="img/profile.png" alt="Profile" class="profile-icon">
         </div>
     </nav>
+    <div class="container">
+        <div class="left-part">
+            <div class="image-wrapper">
+                <img src="img/userIng.png" alt="Big Image" class="big-image">
+                <img src="img/Badge.png" alt="Small Image" class="small-image">
+                <img src="img/radio.png" alt="Third Image" class="third-image">
+            </div>
+        </div>
+        <div class="right-part">
+            <h1 class="title">Title 1</h1>
+            <p class="expert-info">Name and role of the expert</p>
+            <p class="quote">" Quote</p>
+            <p class="highlight">Play [Name] 1 min highlight!</p>
+
+            <!-- Play/Pause Button and Progress Bar -->
+            <div class="audio-player">
+                <img src="img/PauseCircle.png" alt="play" class="playPauseBtn">
+                <div class="progress-bar">
+                    <div id="progress" class="progress"></div>
+                </div>
+                <span id="timeElapsed"></span>60.00sec
+            </div>
+
+            <div class="button-group">
+                <button class="outlined-btn">Lister to full episode</button>
+                <button class="filled-btn">Filled Button</button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Left Side with Floating Label Input -->
+        <div class="left-side">
+            <div class="floating-label">
+                <h1 class="title">In this episode</h1>
+                <p class="expert-info">Explantion what is in the episode</p>
+            </div>
+        </div>
+        
+        <!-- Right Side Input -->
+        <div class="right-side">
+            <div class = "About">
+               <h1 class="title">Title 1</h1>
+               <p class="expert-info">Name and role of the expert</p>
+               <p class="expert-info">Name and role of the expert</p>
+              <div class="social-icons">
+                <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
+                <a href="https://linkedin.com" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+            <div class ="lister-episode">
+                <p class="expert-info">Name and role of the expert</p>
+                <h1 class="title">Title 1</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profile-container">
+        <!-- Left Side: Profile Image in Circular Frame -->
+        <div class="profile-image-container">
+            <img src="img/Badge.png" alt="Profile Image" class="profile-image">
+        </div>
+    
+        <!-- Right Side: Text and Button -->
+        <div class="profile-details">
+            <h1 class="profile-title">Hey I'm Jessica</h1>
+            <p class="profile-description">Expert in Frontend Development Expert in Frontend Development Expert in Frontend DevelopmentExpert in Frontend Development</p>
+            <button class="filled-btn">Schedule a Call With Me</button>
+        </div>
+    </div>
+
+
+
+    
+    
 </body>
 </html>

@@ -15,7 +15,7 @@ body {
     align-items: center;
     background-color: #ffffff;
     padding: 10px 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: transparent;
 }
 
 .nav-left {
@@ -80,6 +80,266 @@ body {
     cursor: pointer;
 }
 
+/* Main Container Styles */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* Left Part with Overlapping Images */
+.left-part {
+    flex: 1;
+    position: relative;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.big-image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.small-image {
+    width: 104px;
+    height: 114px;
+    border-radius: 50%;
+    position: absolute;
+    top: 210px;  /* Adjust as needed */
+    right: 206px; /* Adjust as needed */
+}
+
+.third-image {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+    position: absolute;
+    top: 271px;
+    left: 63px;
+}
+
+/* Right Part with Text Content */
+.right-part {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 2px;
+    font-weight: 200; /* Added margin to separate Title from the next line */
+}
+
+.expert-info {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px; /* Added margin to separate from the next element */
+}
+
+.quote {
+    padding-bottom: 22px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 40px;
+    margin-bottom: 20px; /* Added margin to separate from the next element */
+}
+
+.highlight {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Play/Pause Button and Progress Bar */
+.audio-player {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.play-pause-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.progress-bar {
+    width: 200px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.progress {
+    width: 0%;
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+    transition: width 0.1s linear;
+}
+
+#timeElapsed {
+    padding-top: 10px;
+    font-size: 14px;
+    color: #555;
+}
+
+
+.button-group{
+    padding-top: 20px;
+}
+
+.outlined-btn {
+    height: 42px;
+    width: 197px;
+    border-color: #3E50DE;
+    color: #3E50DE;
+    padding: 10px 20px;
+    border-radius: 25px;
+}
+
+.filled-btn {
+    width: 229px;
+    height: 42px;
+    background-color: #0E24D6;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.left-side{
+    margin: 32px;
+    padding: 38px;
+    height: 600px;
+    width: 759px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+
+
+.About{
+    margin-bottom: 30px;
+    height: 356px;
+    width: 544px;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.lister-episode{
+    height: 218px;
+    width: 544px;
+    background-color: #ffff;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons .icon {
+    margin-right: 15px;
+    color: #007bff;
+    font-size: 24px;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons .icon:hover {
+    color: #0056b3;
+}
+
+.right-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+}
+
+.profile-container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding:  11px 109px;
+}
+
+/* Profile Image Container */
+.profile-image-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    margin-right: 40px;
+    width: 307px;
+    height: 309px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Profile Details */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-title {
+    margin: 13px;
+    font-size: 24px;
+    color: #333;
+}
+
+.profile-description {
+    margin: 13px;
+    font-size: 16px;
+    color: #666;
+}
+
+.profile-btn {
+    margin: 13px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-btn:hover {
+    background-color: #0056b3;
+}
+
+
+
+
+
+
 /* Media Query for Mobile Devices */
 @media (max-width: 768px) {
     .navbar {
@@ -113,4 +373,128 @@ body {
         height: 35px;
         width: 35px;
     }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-wrapper {
+        width: 200px;
+        height: 200px;
+    }
+
+    .small-image {
+        width: 68px;
+        height: 70px;
+        top: 137px;
+        right: 121px;
+    }
+
+    .text-input {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .third-image {
+        width: 39px;
+        height: 34px;
+        top: 175px;
+        left: 52px;
+    }
+
+    .right-part {
+        padding-left: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+
+    .expert-info {
+        font-size: 14px;
+    }
+
+    .highlight {
+        font-size: 12px;
+    }
+
+    .audio-player {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .play-pause-btn {
+        padding: 8px 12px;
+        margin-bottom: 10px;
+    }
+
+    .progress-bar {
+        width: 100px;
+    }
+
+    #timeElapsed {
+        font-size: 10px;
+    }
+
+    .filled-btn {
+        padding: 8px 12px;
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .social-icons {
+        margin-top: 15px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .profile-image {
+        width: 80px;
+        height: 80px;
+    }
+
+    .profile-title {
+        font-size: 20px;
+    }
+
+    .profile-description {
+        font-size: 14px;
+    }
+
+    .profile-btn {
+        padding: 8px 16px;
+    }
+
+
+    .carousel-container {
+        max-width: 100%;
+        margin: 30px auto;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .carousel-name {
+        font-size: 20px;
+    }
+
+    .carousel-title {
+        font-size: 16px;
+    }
+
+    .carousel-description {
+        font-size: 14px;
+    }
+
+
 }
