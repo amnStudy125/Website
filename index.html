@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Navbar with Logo and Buttons</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
     <nav class="navbar">
@@ -39,12 +40,15 @@
             <p class="highlight">Play [Name] 1 min highlight!</p>
 
             <!-- Play/Pause Button and Progress Bar -->
-            <div class="audio-player">
+            <div class="audio-playertop">
                 <img src="img/PauseCircle.png" alt="play" class="playPauseBtn">
-                <div class="progress-bar">
-                    <div id="progress" class="progress"></div>
+                <div class="progress-barMiddle">
+                    <div id="progress" class="progressTop"></div>
                 </div>
-                <span id="timeElapsed"></span>60.00sec
+                <!-- <span id="timeElapsed"></span>60.00sec -->
+            </div>
+            <div class="time-Duration">
+                <p class="Sec">60.00sec</p>
             </div>
 
             <div class="button-group">
@@ -58,24 +62,46 @@
         <div class="left-side">
             <div class="floating-label">
                 <h1 class="title">In this episode</h1>
-                <p class="expert-info">Explantion what is in the episode</p>
+                <p class="expert-infoEpisode">For a long time, Godard assumed that unless he was falling asleep on his laptop , he wasn't working hard enough For a long time, Godard assumed that unless he was falling asleep on his laptop , he wasn't working hard enough</p>
+                <p class="expert-infoEpisode">For a long time, Godard assumed that unless he was falling asleep on his laptop , he wasn't working hard enough For a long time, Godard assumed that unless he was falling asleep on his laptop , he wasn't working hard enough</p>
+            </div>
+            <div class="expert-infoTime" >
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
             </div>
         </div>
         
         <!-- Right Side Input -->
         <div class="right-side">
             <div class = "About">
-               <h1 class="title">Title 1</h1>
-               <p class="expert-info">Name and role of the expert</p>
-               <p class="expert-info">Name and role of the expert</p>
+               <h1 class="AboutTitle">About Noah</h1>
+               <p class="AboutExpert-info"> For a long time, Godard assumed that unless he was falling asleep on his laptop , he wasn't working hard enough For a long time, Godard assumed that unless he was falling asleep on his laptop , he wasn't working hard enough</p>
+               <p class="AboutExpert-info">Follow me:</p>
               <div class="social-icons">
                 <a href="https://twitter.com" target="_blank" class="icon"><i class="fab fa-twitter"></i></a>
                 <a href="https://linkedin.com" target="_blank" class="icon"><i class="fab fa-linkedin"></i></a>
               </div>
+              <p class="AboutSocial">Add more Social Networks </p>
+            
             </div>
             <div class ="lister-episode">
-                <p class="expert-info">Name and role of the expert</p>
-                <h1 class="title">Title 1</h1>
+                <span class="listen-text">Listen to full episode:</span>
+                 <span class="episode-title">Overcoming Stress in the Workspace</span>
+    
+    <div class="audio-player">
+        <div class="progress-bar">
+            <div id="progress" class="progress"></div>
+        </div>
+        <div class="time-info">
+            <span class="time-left">-10:55</span>
+            <span class="time-right">4:44</span>
+        </div>
+        <div class="playBtnID">
+            <img src="img/PlayButton.png" alt="play" class="playBtn">
+        </div>
+        
+    </div>
             </div>
         </div>
     </div>
@@ -95,9 +121,174 @@
         </div>
     </div>
 
+    <section class="containerSwipper">
+        <div class="card__container swiper">
+           <div class="card__content">
+              <div class="swiper-wrapper">
+                  <div class="cart-item swiper-slide">
+                  <div class="cart-icons">
+                    <img src="img/thumbs-up.png" alt="thumUp" class="thumbs-up">
+                    <img src="img/thumbs-down.png" alt="thumUp" class="thumbs-up">
+                  </div>
+              
+                  <div class="cart-image">
+                      <img src="img/AvatarImage.png" alt="Profile Image" class="profile-img">
+                  </div>
+              
+                  <h3 class="cart-name">John Doe</h3>
+                  <h3 class="cart-profession">Web Developer</h3>
+              
+                  <p class="cart-description">
+                      Passionate about web development and design. I love creating user-friendly, responsive websites.
+                  </p>
+                  <div class="audio-player">
+                     <img src="img/PauseCircle.png" alt="play" class="playPauseBtn">
+                     <div class="progress-bar">
+                         <div id="progress" class="progress"></div>
+                     </div>
+                     <span id="timeElapsed"></span>60.00sec
+                 </div>
+                  </div>
+                  <div class="cart-item swiper-slide">
+                  <div class="cart-icons">
+                   <img src="img/thumbs-up.png" alt="thumUp" class="thumbs-up">
+                   <img src="img/thumbs-down.png" alt="thumUp" class="thumbs-up">
+                  </div>
+           
+                  <div class="cart-image">
+                   <img src="img/Professional.png" alt="Profile Image" class="profile-img">
+                  </div>
+           
+                  <h3 class="cart-name">John Doe</h3>
+                     <h3 class="cart-profession">Web Developer</h3>
+           
+                  <p class="cart-description">
+                   Passionate about web development and design. I love creating user-friendly, responsive websites.
+                   </p>
+                  <div class="audio-player">
+                  <img src="img/PauseCircle.png" alt="play" class="playPauseBtn">
+                  <div class="progress-bar">
+                      <div id="progress" class="progress"></div>
+                  </div>
+                  <span id="timeElapsed"></span>60.00sec
+                  </div>
+                  </div>
+                  <div class="cart-item swiper-slide">
+                     <div class="cart-icons">
+                        <img src="img/thumbs-up.png" alt="thumUp" class="thumbs-up">
+                        <img src="img/thumbs-down.png" alt="thumUp" class="thumbs-up">
+                     </div>
+              
+                     <div class="cart-image">
+                      <img src="img/userIng.png" alt="Profile Image" class="profile-img">
+                     </div>
+              
+                     <h3 class="cart-name">John Doe</h3>
+                        <h3 class="cart-profession">Web Developer</h3>
+              
+                     <p class="cart-description">
+                      Passionate about web development and design. I love creating user-friendly, responsive websites.
+                      </p>
+                     <div class="audio-player">
+                     <img src="img/PauseCircle.png" alt="play" class="playPauseBtn">
+                     <div class="progress-bar">
+                         <div id="progress" class="progress"></div>
+                     </div>
+                     <span id="timeElapsed"></span>60.00sec
+                     </div>
+                     </div>
+              </div>
+           </div>
+
+           <!-- Navigation buttons -->
+           <div class="swiper-button-next">
+              <i class="ri-arrow-right-s-line"></i>
+           </div>
+           
+           <div class="swiper-button-prev">
+              <i class="ri-arrow-left-s-line"></i>
+           </div>
+
+           <!-- Pagination -->
+           <div class="swiper-pagination"></div>
+        </div>
+     </section>
+
+     <!-- Footer -->
+<footer>
+    <div class="footer-container">
+        <!-- Column 1: About -->
+        <div class="footer-column">
+            <img src="img/fotterLogo.png" alt="Logo" class="logo-img">
+            <p class="pragLogo">The platform that get you <br> your next client on Linkdin </p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div class="footer-column">
+            <h3>Features</h3>
+            <ul>
+                <li><a href="#">Discussions</a></li>
+                <li><a href="#">Networking</a></li>
+                <li><a href="#">Content Suggestions</a></li>
+                <li><a href="#">Content Creation</a></li>
+                <li><a href="#">Growth Plan</a></li>
+                <li><a href="#">Queue Levels</a></li>
+            </ul>
+        </div>
+
+        <!-- Column 3: Contact Info -->
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul>
+                <li><a href="#">Learn more</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Case Studies</a></li>
+                <li><a href="#">Newsletter</a></li>
+            </ul>
+
+            <!-- Social Media Icons -->
+            
+        </div>
+    </div>
+
+    <!-- Underline Above Footer Bottom -->
+    <div class="footer-underline"></div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <!-- Social Media Column -->
+            <div class="footer-bottom-column">
+                <ul>
+                <li><a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> </a></li>
+                <li><a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> </a></li>
+                <li><a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin"></i> </a></li>
+                </ul>
+            </div>
+
+            <!-- Links Column -->
+            <div class="footer-bottom-column">
+                <ul>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </div>
+
+            <!-- Copyright Column -->
+            <div class="footer-bottom-column">
+                &copy; 2000-2024, All Rights Reserved.
+            </div>
+        </div>
+    </div>
+</footer>
 
 
-    
+     <script src="swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
     
 </body>
 </html>
