@@ -43,15 +43,17 @@
 
             <!-- Play/Pause Button and Progress Bar -->
             <div class="audio-playertop">
-                <img src="img/PauseCircle.png" alt="play" class="playPauseBtn">
+                <img src="img/PauseCircle.png" alt="play" class="playPauseBtn" id="playPauseBtn">
                 <div class="progress-barMiddle">
                     <div id="progress" class="progressTop"></div>
                 </div>
-                <!-- <span id="timeElapsed"></span>60.00sec -->
             </div>
+            <audio id="audioPlayer" src="podcast.mp3"></audio>
             <div class="time-Duration">
-                <p class="Sec">60.00sec</p>
+                <p class="Sec" id="timeRemaining">60.00sec</p>
             </div>
+            <!-- Play/Pause Button and Progress Bar End -->
+            
 
             <div class="button-group">
                 <button class="outlined-btn">Lister to full episode</button>
@@ -71,6 +73,23 @@
                 <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
                 <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
                 <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+                <p class="infoTime"> <span>00:01 - 02:00</span> <span> - </span> answer for the question  </p> 
+            
             </div>
         </div>
         
@@ -91,19 +110,19 @@
                 <span class="listen-text">Listen to full episode:</span>
                  <span class="episode-title">Overcoming Stress in the Workspace</span>
     
-    <div class="audio-player">
-        <div class="progress-bar">
-            <div id="progress" class="progress"></div>
-        </div>
-        <div class="time-info">
-            <span class="time-left">-10:55</span>
-            <span class="time-right">4:44</span>
-        </div>
-        <div class="playBtnID">
-            <img src="img/PlayButton.png" alt="play" class="playBtn">
-        </div>
-        
-    </div>
+                 <div class="audio-player">
+                    <div class="progress-bar">
+                        <div id="progress" class="progress"></div>
+                    </div>
+                    <div class="time-info">
+                        <span class="time-left" id="timeRemaining">-10:55</span>
+                        <span class="time-right" id="totalDuration">4:44</span>
+                    </div>
+                    <div class="playBtnID">
+                        <img src="img/PlayButton.png" alt="play" class="playBtn" id="playPauseBtn2">
+                    </div>
+                    <audio id="audioPlayer2" src="podcast2.mp3"></audio>
+                </div>
             </div>
         </div>
     </div>

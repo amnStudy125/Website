@@ -212,6 +212,7 @@ body {
 .progress-barMiddle {
     width: 350px;
     height: 10px;
+    overflow: hidden;
     background-color: #e0e0e0;
     border-radius: 5px;
     position: relative;
@@ -279,6 +280,7 @@ body {
 }
 
 .left-side{
+    overflow: auto;
     margin: 32px;
     padding: 38px;
     height: 600px;
@@ -346,6 +348,8 @@ body {
 }
 
 .progressTop {
+    transition: width 0.1s linear;
+    width: 0%;
     border-radius: 5px;
     width: 40%; /* Example progress */
     height: 100%;
@@ -947,6 +951,7 @@ footer {
     }
 
     .left-side {
+        overflow: auto;
         margin: 20px 0;
         padding: 20px;
         height: auto;
