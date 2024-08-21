@@ -32,6 +32,11 @@ let swiperCards = new Swiper(".card__content", {
     const audioPlayer2 = document.getElementById("audioPlayer2");
     const playPauseBtn = document.getElementById("playPauseBtn");
     const progress = document.getElementById("progress");
+    const Mainprogress = document.getElementById("Mainprogress");
+    const timeRemaining = document.getElementById('timeRemaining');
+    const lefttimeRemaining = document.getElementById("lefttimeRemaining");
+    const righttotalDuration = document.getElementById('righttotalDuration');
+
 
     playPauseBtn.addEventListener("click", function () {
         if (audioPlayer.paused) {
@@ -53,27 +58,6 @@ let swiperCards = new Swiper(".card__content", {
       timeRemaining.textContent = formatTime(timeLeft) + " sec";
     });
 
-
-    playPauseBtn2.addEventListener("click", function () {
-      if (audioPlayer2.paused) {
-        audioPlayer2.play();
-        playPauseBtn2.src = "img/PlayButton.png"; // Change to Pause icon
-      } else {
-        audioPlayer2.pause();
-        playPauseBtn2.src = "img/PlayButton.png"; // Change to Play icon
-      }
-  });
-
-    audioPlayer2.addEventListener("timeupdate", function () {
-      // Update the progress bar
-        const progressPercentage = (audioPlayer2.currentTime / audioPlayer2.duration) * 100;
-        progress.style.width = progressPercentage + "%";
-
-      // Calculate and update the countdown timer
-      const timeLeft = audioPlayer2.duration - audioPlayer2.currentTime;
-      timeRemaining.textContent = formatTime(timeLeft) + " sec";
-    });
-
     function formatTime(seconds) {
       const minutes = Math.floor(seconds / 60);
       const secs = Math.floor(seconds % 60);
@@ -82,7 +66,38 @@ let swiperCards = new Swiper(".card__content", {
       } else {
           return secs.toFixed(2); // Show seconds with two decimals if less than 1 minute
       }
-  }
+   }
+
+
+   playPauseBtnTwo.addEventListener("click", function () {
+      if (audioPlayer2.paused) {
+        audioPlayer2.play();
+        playPauseBtnTwo.src = "img/PlayButton.png"; 
+      } else {
+        audioPlayer2.pause();
+        playPauseBtnTwo.src = "img/PlayButton.png"; 
+      }
+  });
+
+
+    // Event listener for time updates
+    audioPlayer2.addEventListener('timeupdate', function () {
+      // Update progress bar
+      const progressPercentage = (audioPlayer2.currentTime / audioPlayer2.duration) * 100;
+      Mainprogress.style.width = progressPercentage + "%";
+
+      // Update remaining time and total duration
+      const elapsedTime = audioPlayer2.currentTime;
+      const timeLeft = audioPlayer2.duration - audioPlayer2.currentTime;
+      lefttimeRemaining.textContent = "-" + formatTime(timeLeft);
+      righttotalDuration.textContent = formatTime(elapsedTime);
+  });
+
+    // Update total duration on loaded metadata
+     audioPlayer2.addEventListener('loadedmetadata', function () {
+    righttotalDuration.textContent = formatTime(0); // Start with 00:00
+});
+
 });
 
 
