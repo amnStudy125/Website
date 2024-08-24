@@ -11,12 +11,42 @@ body {
 
 .navbar {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
     padding: 10px 20px;
     background: transparent;
 }
+
+
+.schedule-btn-MOB{
+    display: none;
+}
+
+.nav-top, .nav-middle, .nav-bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.nav-top{
+    justify-content: flex-start;
+}
+  
+
+  .nav-bottom {
+    justify-content: flex-end; /* Aligns .nav-bottom to the right side */
+  }
+
+  .nav-middle{
+    display: none;
+  }
+
+  
+
+
 
 .Secswip{
     font-size: 12px;
@@ -49,6 +79,13 @@ body {
     cursor: pointer;
 }
 
+.ChatExpert {
+    padding-right: 35px;
+    font-size: 14px;
+    color: #333;
+    margin-left: 10px;
+}
+
 .nav-item:hover {
     color: #007bff;
 }
@@ -60,7 +97,7 @@ body {
 }
 
 .schedule-btn {
-    background-color: #007bff;
+    background-color: #0E24D6;
     color: white;
     padding: 10px 20px;
     border: none;
@@ -790,17 +827,41 @@ footer {
 
     .navbar {
         flex-direction: column; 
-        padding: 10px;
+        align-items: flex-start;
     }
+
+    .nav-top, .nav-bottom {
+         /* Bring nav-top and nav-bottom together */
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+      }
 
     .nav-left {
         margin-left: 15px;
         margin-bottom: 10px;
     }
     
+    .nav-middle {
+        justify-content: center !important;
+        height: 40px;
+        background-color: #F5CACA;
+        display: flex;
+        text-align: left;
+        order: 2; /* Place nav-middle in a separate row */
+        width: 100%;
+        margin-top: 10px; /* Optional: Add some spacing if needed */
+        border-radius: 20px;
+      }
+
     .nav-right {
         width: 100%;
         justify-content: space-between;
+    }
+
+
+    .nav-bottom{
+display: none;
     }
 
 
@@ -881,9 +942,9 @@ footer {
         font-size: 14px;
     }
 
-    .profile-icon{
+    /* .profile-icon{
         display: none;
-    }
+    } */
 
     .profile-icon-mob{
         margin-left: 14px;
@@ -916,11 +977,20 @@ footer {
     width: 100%;
 }
 
-    .schedule-btn {
-        display: none;
-        padding: 8px 16px;
-        margin-right: 10px;
-    }
+.schedule-btn-MOB {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.schedule-btn-MOB:hover {
+    background-color: #0056b3;
+}
 
     .AboutSocial{
         display: none;
