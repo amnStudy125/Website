@@ -25,3 +25,22 @@ window.addEventListener('scroll', function() {
       popup.style.left = `${rect.left + window.scrollX}px`;
   }
 });
+
+
+const searchContainer = document.querySelector('.search-container');
+const searchInput = document.querySelector('.search-input');
+
+searchContainer.addEventListener('click', function() {
+    this.classList.add('active');
+    if (searchInput.value === 'Search') {
+        searchInput.value = ''; // Clear the default text
+    }
+    searchInput.focus();
+});
+
+searchInput.addEventListener('blur', function() {
+    if (searchInput.value.trim() === '') {
+        searchInput.value = 'Search'; // Restore the default text
+        searchContainer.classList.remove('active');
+    }
+});

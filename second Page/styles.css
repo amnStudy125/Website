@@ -150,8 +150,9 @@ body {
     display: flex;
 }
 
-.search-button {
+.search-container{
     width: 80%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -160,10 +161,25 @@ body {
     background-color: transparent;
     color: #000;
     font-size: 16px;
-    cursor: pointer;
     border-radius: 30px;
     margin-top: 20px;
+    
 }
+.search-input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    padding: 5px;
+    font-size: 16px;
+    width: auto;
+    transition: all 0.3s ease;
+    color: #000;
+}
+.search-input::placeholder {
+    color: #999;
+}
+
+
 .search-button .icon {
     margin-right: 8px;
 }
@@ -445,7 +461,6 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    align-items: self-end;
     text-align: center;
 }
 
@@ -472,34 +487,28 @@ footer {
     text-align: left;
     font-size: 14px;
 }
-.flashCard-item .buttons {
-    display: flex; 
-    gap: 10px;
+
+.buttons-below{
+    text-align: end;
 }
-.flashCard-item .buttons button {
-    padding:  4px 29px;
-    border-radius: 25px;
-    cursor: pointer;
-    
-}
+
 
 .btn-Learn{
     background-color: #0E24D6;
-    color: #FFFFFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
 }
-
-.btn-icon{
-
-}
-
-
-
 
 .btn-share{
-    
-
-    border-color: #0E24D6;
-    color: #0E24D6;
+    background-color: transparent;
+    color: #0e24d6;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    border-color: #0e24d6;
 }
 
 
