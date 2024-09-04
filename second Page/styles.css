@@ -207,6 +207,12 @@ body {
     margin-right: 8px;
 }
 
+.share-icon{
+    width: 10px;
+    height: 10px;
+
+}
+
 .search-button img {
     width: 16px;
     height: 16px;
@@ -229,6 +235,13 @@ body {
 .filter_button button:hover {
     background-color: #000;
     color: #fff;
+}
+
+.founder{
+    margin-left: 32px;
+    text-align: start;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 footer {
@@ -287,6 +300,13 @@ footer {
     color: gray;
     text-decoration: none;
     transition: color 0.3s;
+}
+
+
+.btn-share .icon {
+    width: 16px; /* Adjust size to fit inside the button */
+    height: 13px;
+    margin-right: 8px; /* Space between icon and text */
 }
 
 
@@ -407,9 +427,10 @@ footer {
 }
 
 .MainTakewayName{
+    margin-left: 33px;
     text-align: left;
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 .midfield{
@@ -425,7 +446,7 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
 }
 /* .left-img img {
     max-width: 100px;
@@ -490,10 +511,15 @@ footer {
 
 .buttons-below{
     text-align: end;
+    /* padding-left: 54%; */
+    /* display: flex; */
+    gap: 11px;
 }
 
 
 .btn-Learn{
+    height: 42px;
+    width: 112px;
     background-color: #0E24D6;
     color: white;
     padding: 10px 20px;
@@ -503,6 +529,8 @@ footer {
 }
 
 .btn-share{
+    height: 42px;
+    width: 112px;
     background-color: transparent;
     color: #0e24d6;
     padding: 10px 20px;
@@ -590,6 +618,12 @@ footer {
         width: 100%;
         font-size: 13px;
         margin-right: 5px;
+    }
+
+    .MainTakewayName{}
+
+    .founder{
+
     }
 
     .filled-btn{
@@ -878,7 +912,11 @@ footer {
     }
 
     
-
+    .btn-share .icon {
+        width: 16px; /* Adjust size to fit inside the button */
+        height: 16px;
+        margin-right: 8px; /* Space between icon and text */
+    }
     
 
     
@@ -995,6 +1033,10 @@ footer {
         width: 32%; /* Adjust size accordingly */
     }
 
+    /* .profile_image_cart{
+
+    } */
+
     .third-image{
         left: 25%;
         width: 15%;
@@ -1010,18 +1052,17 @@ footer {
         padding: 15px; /* Reduce padding for smaller screens */
     }
     .Heading {
+        line-height: 25px;
         font-size: 16px; /* Slightly smaller font size */
-        text-align: center; /* Center the heading for mobile */
+        text-align: left; /* Center the heading for mobile */
     }
     .midfield {
         flex-direction: column;
         align-items: center;
     }
     .left-img {
+        /* align-items: center; */
         margin-bottom: 15px; /* Add margin to space out the image from the text */
-    }
-    .left-img img {
-        max-width: 80px; /* Scale down the image size */
     }
     .right-text {
         text-align: center; /* Center the text */
@@ -1104,6 +1145,18 @@ footer {
             /* cursor: pointer; */
             border-radius: 26px;
         }
+
+    .search-title{
+        border-color: #A4A09E;
+            text-align: left;
+            width: 100%;
+            background-color: #FFFFFF;
+            color: GRAY;
+            border: 1px  solid #A4A09E;
+            padding: 14px 20px;
+            /* cursor: pointer; */
+            border-radius: 26px;
+    }
 
  
     .search-industries::after {
