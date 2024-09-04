@@ -78,13 +78,13 @@ searchInputindustries.addEventListener('blur', function() {
 const searchInputtitle = document.querySelector('.search-title');
 
 searchInputtitle.addEventListener('focus', function() {
-    if (this.value === 'Search Industries') {
+    if (this.value === 'Search title') {
         this.value = '';
     }
 });
 
 searchInputtitle.addEventListener('blur', function() {
     if (this.value.trim() === '') {
-        this.value = 'Search Industries';
+        this.value = 'Search title';
     }
 });
